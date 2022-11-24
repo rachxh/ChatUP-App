@@ -57,7 +57,7 @@ const ImpostorType = () => {
 
                 if (response.intents.length < 1) {
                     setResponseText(
-                        `Rudolf cannot measure your answer so far. Here is a quote for you: 
+                        `Rudolf cannot measure your answer so far 🤔. Here is a quote for you 💞: 
                         "${anotherAnswer}"`
                     );
                     return;
@@ -67,28 +67,29 @@ const ImpostorType = () => {
                 const name = response.intents[0].name;
                 if (name !== label) {
                     setResponseText(
-                        `Maybe give more compasssion. It would be better to say something like: 
+                        `Maybe give more compasssion. It would be better to say something like 💞: 
                         "${anotherAnswer}"`
                     );
                     return;
                 }
                 if (confidence > 0.9) {
                     setResponseText(
-                        `Perfect answer! Pass the compassion on! Here is the quote for you to keep the momentum going: " 
+                        `Perfect answer! Pass the compassion on! ❤️
+                        Here is the quote for you to keep the momentum going 💞: 
                         "${anotherAnswer}"`
                     );
                 } else if (confidence > 0.75) {
                     setResponseText(
-                        `Great answer and you could also say  the following: 
+                        `Great answer and you could also say the following 💞: 
                         "${anotherAnswer}"`
                     );
                 } else if (confidence > 0.5) {
                     setResponseText(
-                        "Good answer and you could also say the following: " + anotherAnswer
+                        "Good answer and you could also say the following 💞: " + anotherAnswer
                     );
                 } else {
                     setResponseText(
-                        `Try to be more compssionate, it would be better to say following: 
+                        `Try to be more compssionate, it would be better to say following 💞: 
                         "${anotherAnswer}"`
                     );
                 }
