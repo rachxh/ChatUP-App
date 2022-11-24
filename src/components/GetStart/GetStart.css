@@ -1,0 +1,38 @@
+
+.container {
+    position: relative;
+    width: 50vw;
+    height: 90vh;
+    margin: 3rem auto;
+    border: 2px rgb(172, 135, 190) solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1{
+    color: #9b75f5;
+  }
+  .chat-img{
+    height: 50vh;
+    width: auto;
+    margin-top: 2rem;
+  }
+  .start-btn{
+   
+    border: none;
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem 3rem;
+    border-radius: 25px;
+    font-size: large;
+    margin-top: 2rem;
+    background-image: linear-gradient(to right, #9b75f5, #a571f6, #b06cf6, #ba66f5, #c560f4);
+
+  }
+  .start-link{
+    color: white;
+  }
+
+ 
