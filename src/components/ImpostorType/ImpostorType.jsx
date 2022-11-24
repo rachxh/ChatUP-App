@@ -126,7 +126,7 @@ const ImpostorType = () => {
             case "impostor_superperson":
                 return "I could not working hard enough 😔";
             default:
-                return "Hi, my name is Panda. I feel like an imposter sometimes.";
+                return "Hi, my name is Panda. I feel like an imposter sometimes. Can you help me?";
         }
     };
 
@@ -196,7 +196,7 @@ const ImpostorType = () => {
                 )}
                 <div className="send-wrapper">
                     <p>
-                        What would you say to yourself or your friend in a compassionate way
+                        What would you say to Panda in a compassionate way
                         ?{" "}
                     </p>
                     <div className="input-wrapper">
