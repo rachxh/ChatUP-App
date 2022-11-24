@@ -3,14 +3,14 @@ import { useParams } from "react-router-dom";
 import { IoSendSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
-import "./ImpostorType.css"
+import "./ImpostorType.css";
 
 const ImpostorType = () => {
     const { label } = useParams();
     const matchingAnswerArray = {
         impostor_superperson: [
             "Balance is not something you find, it’s something you create.",
-            "The only way you will really see what you’re capable of and start to trust in the fact that you are not an imposter is to stop overworking.",
+            "Your energy is your currency. Spend it well.",
             "Nothing is worth your health. Nothing is worth poisoning yourself with stress, anxiety, and fear. ",
         ],
         impostor_expert: [
@@ -196,23 +196,22 @@ const ImpostorType = () => {
                 )}
                 <div className="send-wrapper">
                     <p>
-                        What would you say to yourself or your friend in a compassionate way ?{" "}
+                        What would you say to yourself or your friend in a compassionate way
+                        ?{" "}
                     </p>
                     <div className="input-wrapper">
-                    <input type="text" onChange={updateMessage} value={message} />
-                    <button className="send-btn" onClick={sendRequest} type="submit">
-                        <IoSendSharp />
-                    </button>
+                        <input type="text" onChange={updateMessage} value={message} />
+                        <button className="send-btn" onClick={sendRequest} type="submit">
+                            <IoSendSharp />
+                        </button>
                     </div>
                 </div>
                 <div>
-               <Link className="previous-link" to="/intro">
-                   <IoIosArrowBack />
-               </Link>
-          
-       </div>
+                    <Link className="previous-link" to="/intro">
+                        <IoIosArrowBack />
+                    </Link>
+                </div>
             </div>
-          
         </>
     );
 };

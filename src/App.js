@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Intro from "./components/Intro/Intro";
-// import Types from "./components/Types";
 import ImpostorType from "./components/ImpostorType/ImpostorType";
 import Layouts from "./pages/Layouts";
 import GetStart from "./components/GetStart/GetStart";
