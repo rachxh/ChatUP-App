@@ -132,7 +132,7 @@
     border: none;
   }
   .question-text{
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.2rem;
   }
 
 /* for iPad mini */
@@ -178,6 +178,9 @@
       text-indent: 1rem;
       border: none;
     }
+    input:focus{
+      outline: none;
+  }
     .previous-link {
       position: absolute;
       left: 2px;
