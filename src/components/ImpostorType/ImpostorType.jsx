@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import React, { useState ,useEffect,} from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import { IoSendSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
@@ -7,6 +7,13 @@ import "./ImpostorType.css";
 
 const ImpostorType = () => {
     const { label } = useParams();
+    const navigate = useNavigate()
+    useEffect(() => {
+        if (label === undefined)
+        {
+            navigate('/impostortype/impostor_perfectionist');
+        }
+    });
     const matchingAnswerArray = {
         impostor_superperson: [
             "Balance is not something you find, it’s something you create.",
@@ -95,6 +102,7 @@ const ImpostorType = () => {
                 }
             })
             .catch((error) => console.error(error));
+            setMessage("")
     };
 
     const getTitle = () => {
