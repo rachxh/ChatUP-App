@@ -14,7 +14,7 @@ const GetStart = () => {
       </div>
       <div>
       <button className="start-btn">
-        <Link className="start-link" to="/intro"> Get Start</Link>
+        <Link className="start-link" to="/intro"> Get Started</Link>
       </button>
       </div>
     </div>

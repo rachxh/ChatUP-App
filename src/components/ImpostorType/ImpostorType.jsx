@@ -120,13 +120,13 @@ const ImpostorType = () => {
             case "impostor_expert":
                 return "I haven't known everthing about this topic 😔";
             case "impostor_naturalgenius":
-                return "I am not natural talented 😔";
+                return "I am not naturally talented 😔";
             case "impostor_soloist":
                 return "I don't feel like asking for help 😔";
             case "impostor_superperson":
-                return "I could not working hard enough 😔";
+                return "I am not working hard enough 😔";
             default:
-                return "Hi, my name is Panda. I feel like an imposter sometimes. Can you help me?";
+                return "Hi, my name is Panda. I feel like an imposter today. Can you help me?";
         }
     };
 
