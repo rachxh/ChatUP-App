@@ -35,4 +35,26 @@
     color: white;
   }
 
- 
+
+
+/* for iPad mini */
+@media (min-width: 768px) and (max-width: 1024px)  {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+  }
+}
+  /** For mobile devices **/
+  @media (max-width: 767px) {
+    .container {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      margin: 0;
+    }
+    .faq-img{
+      width: 80%;
+    }
+
+  }

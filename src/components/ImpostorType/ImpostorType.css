@@ -1,5 +1,15 @@
+.types-container {
+  position: relative;
+  width: 50vw;
+  height: 90vh;
+  margin: 3rem auto;
+  border: 2px rgb(172, 135, 190) solid;
+  border-radius: 20px;
+}
+
 .type-btn-wrapper {
-    display: flex;
+  display: flex;
+   flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -67,25 +77,16 @@
   }
   
   .type-btn.active > * {
-  
     color: white !important;
-  
-  }
-  
-  .box-wrapper {
-    position: relative;
-    width: 50vw;
-    height: 90vh;
-    margin: 3rem auto;
-    border: 2px rgb(172, 135, 190) solid;
-    border-radius: 20px;
   }
   
   h2 {
     text-align: center;
     margin: 1rem;
   }
-  
+  p{
+    text-align: start;
+  }
   .send-wrapper {
     width: 100%;
     position: absolute;
@@ -94,8 +95,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 1rem;
-  
+  }
+  .input-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   input {
@@ -108,9 +112,8 @@
   
   .send-btn {
     margin: 0 0.2rem;
-  
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     font-size: x-large;
     background-color: rgb(152, 15, 225);
@@ -126,10 +129,52 @@
     top: 10px;
     font-size: 2rem;
     border: none;
-    text-align: center;
+  }
+
+
+/* for iPad mini */
+@media (min-width: 768px) and (max-width: 1024px)  {
+  .types-container {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    margin: 0;
+  }
+  input {
+    width: 80vw;
+    padding: 1rem 0;
+    border-radius: 25px;
+    text-indent: 1rem;
+    border: none;
+  }
+  .send-wrapper {
     position: absolute;
-    /* width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: white; */
+    bottom: 2.5rem;
+  }
+}
+  /** For mobile devices **/
+  @media (max-width: 767px) {
+    .types-container {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      margin: 0;
+    }
+    h1{
+      font-size: 1.3rem;
+      margin: 0;
+      padding: 2rem;
+    }
+    input {
+      width: 80vw;
+      padding: 1rem 0;
+      border-radius: 25px;
+      text-indent: 1rem;
+      border: none;
+    }
+    .previous-link {
+      position: absolute;
+      left: 2px;
+      top: 3px;
+    }
   }

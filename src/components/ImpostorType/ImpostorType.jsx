@@ -57,8 +57,8 @@ const ImpostorType = () => {
 
                 if (response.intents.length < 1) {
                     setResponseText(
-                        "Rudolf couldn't measure your answer so far. Here is a quote for you: " +
-                        <b>{anotherAnswer}</b>
+                        `Rudolf cannot measure your answer so far. Here is a quote for you: 
+                        "${anotherAnswer}"`
                     );
                     return;
                 }
@@ -67,20 +67,20 @@ const ImpostorType = () => {
                 const name = response.intents[0].name;
                 if (name !== label) {
                     setResponseText(
-                        "Maybe give more compasssion. It would be better to say something like: " +
-                        anotherAnswer
+                        `Maybe give more compasssion. It would be better to say something like: 
+                        "${anotherAnswer}"`
                     );
                     return;
                 }
                 if (confidence > 0.9) {
                     setResponseText(
-                        "Perfect answer! Pass the compassion! Here is the quote for you to keep the momentum going: " +
-                        anotherAnswer
+                        `Perfect answer! Pass the compassion on! Here is the quote for you to keep the momentum going: " 
+                        "${anotherAnswer}"`
                     );
                 } else if (confidence > 0.75) {
                     setResponseText(
-                        "Great answer and you could also say  the following: " +
-                        anotherAnswer
+                        `Great answer and you could also say  the following: 
+                        "${anotherAnswer}"`
                     );
                 } else if (confidence > 0.5) {
                     setResponseText(
@@ -88,8 +88,8 @@ const ImpostorType = () => {
                     );
                 } else {
                     setResponseText(
-                        "Try to be more compssionate, it would be better to say following: " +
-                        anotherAnswer
+                        `Try to be more compssionate, it would be better to say following: 
+                        "${anotherAnswer}"`
                     );
                 }
             })
@@ -132,7 +132,7 @@ const ImpostorType = () => {
 
     return (
         <>
-            <div className="box-wrapper">
+            <div className="types-container">
                 <h1>Types of imposter syndrome</h1>
                 <div className="type-btn-wrapper">
                     <button
@@ -198,7 +198,7 @@ const ImpostorType = () => {
                     <p>
                         What would you say to yourself or your friend in a compassionate way ?{" "}
                     </p>
-                    <div>
+                    <div className="input-wrapper">
                     <input type="text" onChange={updateMessage} value={message} />
                     <button className="send-btn" onClick={sendRequest} type="submit">
                         <IoSendSharp />

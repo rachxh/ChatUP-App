@@ -4,8 +4,7 @@ import { IoIosArrowForward} from "react-icons/io";
 import { IoIosArrowBack} from "react-icons/io";
 import "./Intro.css"
 
-const Intro
- = () => {
+const Intro= () => {
     return (
         <div className='container'>
            <img className="faq-img" src="https://drive.google.com/uc?export=view&id=1gc7nbJFmj2vXDRqB19aJmEVPCwCOoHN3" alt="FAQ" />

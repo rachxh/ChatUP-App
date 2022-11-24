@@ -18,12 +18,13 @@ a {
 }
 
 h1 {
-  margin: 2rem 0 2rem 0;
+  padding: 2rem;
   text-align: center;
 }
 
 p {
   padding: 0.5rem;
+  text-align: center;
 }
 
 
