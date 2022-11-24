@@ -195,7 +195,7 @@ const ImpostorType = () => {
                     </div>
                 )}
                 <div className="send-wrapper">
-                    <p>
+                    <p className="question-text">
                         What would you say to Panda in a compassionate way
                         ?{" "}
                     </p>

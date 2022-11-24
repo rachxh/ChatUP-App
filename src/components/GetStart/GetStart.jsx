@@ -6,7 +6,7 @@ const GetStart = () => {
   return (
     <div className="container">
         <div>
-      <h1>ChatUP</h1>
+      <h1 className="home-title">ChatUP</h1>
       <h3>Overcome Imposter Syndrome</h3>
       </div>
       <div className="chat-img-wrapper">

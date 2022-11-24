@@ -11,8 +11,8 @@
   align-items: center;
 }
 
-h1 {
-  color: #9b75f5;
+.home-title {
+  padding-bottom: 0;
 }
 
 .chat-img {
@@ -22,7 +22,6 @@ h1 {
 }
 
 .start-btn {
-
   border: none;
   text-align: center;
   align-items: center;
@@ -45,6 +44,7 @@ h1 {
     width: 100vw;
     height: 100vh;
     border: none;
+    margin: 0;
   }
 }
 
