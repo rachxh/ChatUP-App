@@ -47,7 +47,7 @@ const ImpostorType = () => {
     const updateMessage = (event) => {
         setMessage(event.target.value);
     };
-
+// Fetch API request
     const sendRequest = () => {
         console.log("sendRequest()");
         fetch("https://api.wit.ai/message?v=20221121&q=" + message, {
@@ -69,7 +69,7 @@ const ImpostorType = () => {
                     );
                     return;
                 }
-
+// Matching AI confidence level
                 const confidence = response.intents[0].confidence;
                 const name = response.intents[0].name;
                 if (name !== label) {
@@ -104,7 +104,7 @@ const ImpostorType = () => {
             .catch((error) => console.error(error));
             setMessage("")
     };
-
+// Switch title 
     const getTitle = () => {
         switch (label) {
             case "impostor_perfectionist":
@@ -121,7 +121,7 @@ const ImpostorType = () => {
                 return "Choose an imposter narrative!";
         }
     };
-
+//Switch mood
     const getMood = () => {
         switch (label) {
             case "impostor_perfectionist":
@@ -144,47 +144,47 @@ const ImpostorType = () => {
             <div className="types-container">
                 <h1>Types of imposter syndrome</h1>
                 <div className="type-btn-wrapper">
-                    <button
+                    <div
                         className={`type-btn ${label === "impostor_perfectionist" ? "active" : ""
                             }`}
                     >
                         <Link reloadDocument to="/impostortype/impostor_perfectionist">
                             The Perfectionist{" "}
                         </Link>
-                    </button>
+                    </div>
 
-                    <button
+                    <div
                         className={`type-btn ${label === "impostor_expert" ? "active" : ""
                             }`}
                     >
                         <Link reloadDocument to="/impostortype/impostor_expert">
                             The Expert{" "}
                         </Link>
-                    </button>
-                    <button
+                    </div>
+                    <div
                         className={`type-btn ${label === "impostor_naturalgenius" ? "active" : ""
                             }`}
                     >
                         <Link reloadDocument to="/impostortype/impostor_naturalgenius">
                             The Natural Genius{" "}
                         </Link>
-                    </button>
-                    <button
+                    </div>
+                    <div
                         className={`type-btn ${label === "impostor_soloist" ? "active" : ""
                             }`}
                     >
                         <Link reloadDocument to="/impostortype/impostor_soloist">
                             The Soloist{" "}
                         </Link>
-                    </button>
-                    <button
+                    </div>
+                    <div
                         className={`type-btn ${label === "impostor_superperson" ? "active" : ""
                             }`}
                     >
                         <Link reloadDocument to="/impostortype/impostor_superperson">
                             The Superperson{" "}
                         </Link>
-                    </button>
+                    </div>
                 </div>
                 <h3>{getTitle()} 💬</h3>
                 <div className="chatBubbleLeft">
